@@ -23,6 +23,8 @@ PROTOCOL | protocol
 STRING | string
 POINTER | pointer
 AND | and
+TRUE | true
+FALSE | false
 ENDLINE | ;
 ADD | +
 SUBSTRACTION | -
