@@ -22,6 +22,7 @@ FILE | file
 PROTOCOL | protocol
 STRING | string
 POINTER | pointer
+AND | and
 ENDLINE | ;
 ADD | +
 SUBSTRACTION | -
@@ -41,6 +42,7 @@ LR | (
 RR | )
 POINTED_VALUE | ^
 ADDRESS | &
+SEMICOLON | ;
 PROTOCOL | protocol
 DECYPHER | decypher
 FIND_ADD | findAddresses
