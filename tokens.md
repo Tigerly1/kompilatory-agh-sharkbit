@@ -22,6 +22,7 @@ FILE | file
 PROTOCOL | protocol
 STRING | string
 POINTER | pointer
+ENDLINE | ;
 ADD | +
 SUBSTRACTION | -
 MULTIPLY | *
