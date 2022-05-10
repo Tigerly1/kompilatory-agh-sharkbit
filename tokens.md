@@ -26,7 +26,7 @@ ADD | +
 SUBSTRACTION | -
 MULTIPLY | *
 DIVIDE | /
-ASSING | +
+ASSING | =
 COMMENT | #
 COUT | ?
 QUOTE | '
