@@ -22,7 +22,7 @@ FILE | file
 PROTOCOL | protocol
 STRING | string
 POINTER | pointer
-
+-----| ----
 ADD | +
 SUBSTRACTION | -
 MULTIPLY | *
@@ -40,7 +40,7 @@ LR | (
 RR | )
 POINTED_VALUE | ^
 ADDRESS | &
-
+-----| -----
 PROTOCOL | protocol
 DECYPHER | decypher
 FIND_ADD | findAddresses
