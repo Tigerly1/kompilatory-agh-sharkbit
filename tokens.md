@@ -20,10 +20,30 @@ ADDRESS | address
 FUNCTION | function
 FILE | file
 PROTOCOL | protocol
+STRING | string
+POINTER | pointer
+
 ADD | +
 SUBSTRACTION | -
 MULTIPLY | *
 DIVIDE | /
 ASSING | +
 COMMENT | #
-STRING | string
+COUT | ?
+QUOTE | '
+DOUBLEQUOTE | "
+LS | \[
+RS | ]
+LC | {
+RC | }
+LR | (
+RR | )
+POINTED_VALUE | ^
+ADDRESS | &
+
+PROTOCOL | protocol
+DECYPHER | decypher
+FIND_ADD | findAddresses
+GET_PROC | getProcess
+SEND_PACKET | sendPacket
+
