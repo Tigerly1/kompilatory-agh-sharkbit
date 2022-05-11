@@ -39,4 +39,4 @@
 39. call → ID LR args RR
 40. args → argList | Ø
 41. argList → argList COMMA SimpleExp | SimpleExp
-42. constant → NULL | NUMCONST | CHARCONST | STRINGCONST | true | false
+42. constant → NULL | INTNUMBER  | CHAR | STRING | true | false | DOUBNUMBER
