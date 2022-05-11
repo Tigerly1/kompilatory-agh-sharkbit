@@ -63,5 +63,12 @@ AND | and
 NOT | not 
 ID | 
   
-  * digit - [0-9]{1}
-  * letter - [a-zA-Z]{1}
+  * digit - \d
+  * letter - \w
+  * diglet = letter | digit
+  * ID - letter diglet*
+  * INTNUMBER - /^[-+]?\d+/
+  * DOUBNUMBER - /^[0-9]+(\\.[0-9]+)?/
+  * CHAR - /'\w'/
+  * STING - ".*"
+  * 
