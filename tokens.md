@@ -65,9 +65,10 @@ ID | letter diglet*
 digit | \d
 letter | \w
 
-diglet -> letter | digit 
-INTNUMBER -> /^[-+]?\d+/
-DOUBNUMBER -> /^[0-9]+(\\.[0-9]+)?/
-CHAR -> /'\w'/
-STRING -> ".*"
+
+*diglet -> letter | digit 
+*INTNUMBER -> /^[-+]?\d+/
+*DOUBNUMBER -> /^[0-9]+(\\.[0-9]+)?/
+*CHAR -> /'\w'/
+*STRING -> ".*"
  
