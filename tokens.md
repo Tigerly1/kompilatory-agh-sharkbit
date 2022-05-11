@@ -61,6 +61,9 @@ COMMA | ,
 DOT | .
 AND | and
 NOT | not 
+TO | to
+BY | by
+IN | in
 ID | letter diglet*
 digit | \d
 letter | \w
