@@ -57,3 +57,5 @@ LEQ | <=
 GEQ | >=
 EQ | ==
 DIFF | !=
+COMMA | ,
+DOT | .
