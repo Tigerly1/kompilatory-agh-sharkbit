@@ -61,14 +61,13 @@ COMMA | ,
 DOT | .
 AND | and
 NOT | not 
-ID | 
-  
-  * digit - \d
-  * letter - \w
-  * diglet = letter | digit
-  * ID - letter diglet*
-  * INTNUMBER - /^[-+]?\d+/
-  * DOUBNUMBER - /^[0-9]+(\\.[0-9]+)?/
-  * CHAR - /'\w'/
-  * STRING - ".*"
-  * 
+ID | letter diglet*
+digit | \d
+letter | \w
+
+diglet -> letter | digit 
+INTNUMBER -> /^[-+]?\d+/
+DOUBNUMBER -> /^[0-9]+(\\.[0-9]+)?/
+CHAR -> /'\w'/
+STRING -> ".*"
+ 
