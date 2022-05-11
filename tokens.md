@@ -64,7 +64,7 @@ NOT | not
 TO | to
 BY | by
 IN | in
-ID | letter diglet*
+ID | letter diglet\*
 digit | \d
 letter | \w
 
@@ -77,5 +77,5 @@ letter | \w
  
  *CHAR -> /'\w'/
  
- *STRING -> ".*"
+ *STRING -> ".\*"
  
