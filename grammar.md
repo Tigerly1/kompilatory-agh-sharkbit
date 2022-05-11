@@ -21,11 +21,11 @@
 21. compoundStmt → LC localDecls stmtList RC
 22. localDecls → localDecls VarDecl | Ø
 23. stmtList → stmtList stmt | Ø
-24. selectStmt → if (simpleExp)stmt | if (simpleExp) stmt else stmt
+24. selectStmt → IF (simpleExp)stmt | IF (simpleExp) stmt else stmt
 25. iterStmt → WHILE LR simpleExp RR stmt | FOR LR ID IN iterRange RR stmt
 26. iterRange → simpleExp TO simpleExp | simpleExp TO simpleExp BY simpleExp
-27. returnStmt → return SEMICOLON | return simpleExp SEMICOLON
-28. breakStmt → break SEMICOLON
+27. returnStmt → RETURN SEMICOLON | RETURN simpleExp SEMICOLON
+28. breakStmt → BREAK SEMICOLON
 29. simpleExp → mathExp | logicalExp
 30. logicalExp → logicalExp AND unaryRelExp | unaryRelExp
 31. unaryRelExp → NOT unaryRelExp | relExp
