@@ -7,9 +7,10 @@
 
 ## Założenia języka SharkBit
 
-  SharkBit to funkcyjny interpretowany język, który składnią przypomina pomieszanego pythona z językiem C
+  SharkBit to funkcyjny interpretowany język, który składniowo przypomina pomieszanego pythona z językiem C
   
-  Celem programu jest prostsze oraz skuteczniejsze analizowanie działających procesów, ingerowanie w nie oraz obsługiwanie pakietów, które wypływają z tych procesów w     sieć. Możliwa jest też analiza pakietów które przychodzą i są później używane przez nasz proces
+  Celem programu jest prostsze oraz skuteczniejsze analizowanie działających procesów. Wszystko co znajdziemy w procesie podlega naszej ingerencji. W naszym języku         możemy także obsługiwać oraz obserwować pakiety sieciowe. 
+  
 
 ### Tokeny
   [opis tokenów](https://github.com/Tigerly1/kompilatory-agh-sharkbit/blob/main/tokens.md)
