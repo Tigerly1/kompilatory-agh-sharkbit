@@ -51,3 +51,8 @@ FIND_ADD | findAddresses
 GET_PROC | getProcess
 SEND_PACKET | sendPacket
 NULL | null
+LESS | <
+GREATER | <
+LEQ | <=
+GEQ | >=
+EQ | ==
