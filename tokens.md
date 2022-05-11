@@ -59,7 +59,9 @@ EQ | ==
 DIFF | !=
 COMMA | ,
 DOT | .
-
+AND | and
+NOT | not 
+ID | 
   
   * digit - [0-9]{1}
   * letter - [a-zA-Z]{1}
