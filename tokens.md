@@ -56,3 +56,4 @@ GREATER | <
 LEQ | <=
 GEQ | >=
 EQ | ==
+DIFF | !=
