@@ -22,8 +22,8 @@
 22. localDecls → localDecls VarDecl | Ø
 23. stmtList → stmtList stmt | Ø
 24. selectStmt → if (simpleExp)stmt | if (simpleExp) stmt else stmt
-25. iterStmt → while (simpleExp) stmt | for LR ID in iterRange RR stmt
-26. iterRange → simpleExp to simpleExp | simpleExp to simpleExp by simpleExp
+25. iterStmt → WHILE LR simpleExp RR stmt | FOR LR ID IN iterRange RR stmt
+26. iterRange → simpleExp TO simpleExp | simpleExp TO simpleExp BY simpleExp
 27. returnStmt → return SEMICOLON | return simpleExp SEMICOLON
 28. breakStmt → break SEMICOLON
 29. simpleExp → mathExp | logicalExp
