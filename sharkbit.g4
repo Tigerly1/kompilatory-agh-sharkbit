@@ -17,7 +17,7 @@ COUT ID SEMICOLON | COUT mathExp SEMICOLON;
 constSpec :
 CONST | ;
 typeSpec :
-INT | BOOL | DOUBLE | STRING | IP | PROTOCOL | ADDRESS | FILE | PORT | CHAR | list;
+INT | BOOL | DOUBLE | STRING | IP | PROTOCOL | ADDRESS | FILE | PORT | CHAR | list | ;
 list:
 LIST LESS typeSpec GREATER;
 typeDec :
@@ -29,7 +29,7 @@ FUNCTION ID typeDec LR parms RR stmt;
 parms :
 parmList | ;
 parmList :
-parmList SEMICOLON parmTypeList | parmTypeList;
+parmList COMMA parmTypeList | parmTypeList;
 parmTypeList :
 typeDec parmIdList;
 parmIdList :
@@ -37,13 +37,11 @@ parmIdList COMMA parmId | parmId;
 parmId :
 ID | ID LS RS;
 stmt :
-expStmt | compoundStmt | selectStmt | iterStmt | returnStmt | breakStmt;
+expStmt | compoundStmt | selectStmt | iterStmt | returnStmt | breakStmt | varDecl |  coutDecl ;
 expStmt :
 simpleExp SEMICOLON | SEMICOLON;
 compoundStmt :
-LC localDecls stmtList RC;
-localDecls :
-localDecls VarDecl | ;
+LC  stmtList  RC;
 stmtList :
 stmtList stmt | ;
 selectStmt :
@@ -73,7 +71,7 @@ ADD | SUBSTRACTION | MULTIPLY | DIVIDE | MOD;
 factor :
 immutable | mutable;
 mutable :
-ID | ID LS NUMCONST RS | POINTER_ADDRESS ID;
+ID | ID LS INTNUMBER RS | POINTER_ADDRESS ID;
 immutable :
 LR mathExp RR | call | constant; //math exp nie wiadomo
 call :
@@ -81,7 +79,7 @@ ID LR args RR;
 args :
 argList | ;
 argList :
-argList COMMA SimpleExp | SimpleExp;
+argList COMMA simpleExp | simpleExp;
 constant :
 NULL | INTNUMBER | CHAR_CONST | STRING_CONST | TRUE | FALSE | DOUBNUMBER;
 
@@ -145,8 +143,9 @@ TO: 'to';
 BY: 'by';
 IN: 'in';
 ID: [A-Za-z][a-zA-Z0-9]*;
-STRING_CONST: '"'[A-Za-z]'"';
+STRING_CONST: '"'[A-Za-z]*'"';
 DOUBNUMBER: [0-9]+'.'[0-9]*;
 INTNUMBER: [0-9]+;
 CHAR_CONST: '\''[A-Za-z0-9]'\'';
 PORT: 'port';
+WS: [ \t\r\n]+ -> skip;
